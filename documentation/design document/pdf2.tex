@@ -1,0 +1,64 @@
+\documentclass{report}
+
+
+\begin{document}
+
+\title{Assignment 2 \\ Design Document}
+\author{Ayush singh pal 2016CSJ0018\\ 
+kulvendra singh 2016CSJ0026   }
+
+\maketitle
+\pagebreak
+\begin{abstract}
+
+-In this assignment, we will parse a input file  and extract the magnitudes and NET points between which all the components are connected.
+
+-Using these information we will render a output file in svg format displaying a circuit with all connected components with their magnitudes and NET points between which they are coonected well defined in the image.
+
+-We will also solve the circuit and display the current and voltage value in each of the compnents.
+ 
+\end{abstract}
+\pagebreak
+\section{Overall Design}
+Our circuit solver application is divided into the following  components:
+\begin{flushleft}
+\textbf{1. Parsing }
+\end{flushleft}
+\begin{flushleft}
+\textbf{2.assgn2.cpp}
+\end{flushleft}
+\begin{flushleft}
+\textbf{3. Solve.cpp}
+\end{flushleft}
+\textbf{4. output file in svg format}
+\subsection{Parsing}
+C++ file handling is used here for parsing and extracting the information of components likewise magnitude and NET points of the various components.
+
+
+\subsection{assgn2.cpp}
+
+It consits code for each component and code for drawing the main frame which consists the the whole circuit.
+
+\subsection{solve.cpp}
+
+It consists the code for solving the whole circuit.
+\subsection{Output file}
+
+There are two output file one for part first, It is the output file in svg format and displays all components of the circuit connected to each other according to the information provided in input file.
+Second output file is a text file which prints the value the voltage and current in various components. 
+\subsection{Additional features}
+
+-The final output file contains a button at top left which allows the user
+ to toggle page in all four direction i.e up,down,left,right
+ 
+ - it also contain a button to zoom in or out.
+
+\subsection{Testing}
+
+
+We will test it for sample file with all type variation so that it runs for each correct input and indicate the error if wrong input is entered.
+
+
+
+\end{document}
+

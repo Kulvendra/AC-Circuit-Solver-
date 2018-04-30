@@ -1,0 +1,9 @@
+I1 Net1 0 SINE ( 0.0 25 800 hz 0.0S 0.0)
+I2 Net2 Net1 SINE ( 0.0 50 780 hz 0.0S 0.0)
+I3 Net3 Net2 SINE ( 0.0 40 118 hz 0.0S 0.0)
+R1 Net3 0 200
+R2 Net3 0 3 K
+C1 Net3 0 10 m
+C2 Net3 0 3 m
+L1 Net3 0 40 u
+L2 Net3 0 60 u

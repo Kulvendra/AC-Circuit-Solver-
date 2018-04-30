@@ -1,0 +1,127 @@
+\documentclass[]{article}
+\begin{document}
+
+\title{Documentation of final submission for assingnment AC circuit solver}
+\author{Ayush Singh Pal(2016csj0018),
+kulvendra singh(2016csj0026)
+}
+\maketitle
+
+\begin{abstract}
+This document represents the objectives that we were able to achieve which were set during the assignment announcement.
+It also give an insight of detailed instructions that are necessary to run the program.
+\end{abstract}
+
+
+\section{Name of all files that are being used}
+
+-assgn2.cpp
+
+-draw.h
+
+-solve.cpp
+ 
+\section{Objectives completed}
+
+-program successfully parse the input netlist format and extract the information like magnnitude and unit.
+
+-It displays the circuit with all components connected according to the data given in netlist format.
+
+-It solve the circuit and prints the results in a text file.
+
+\section{objectives omitted/changes}
+
+omitted objective
+
+-pop out the information when being clicked upon the svg image
+
+-have covered most of the cases but not all  while solving the ac circuit
+
+Changes
+
+
+-there is a little change in netlist format while entering the input there should be a space between magnitude and unit i.e 10 mH is acceptable instead of 10mH,for part 1 input is accepted according to netlist format
+
+\section{Additional feature}
+
+-The final output file contains a button at top left which allows the user to toggle page in all four direction i.e up,down,left,right.
+
+- it also contain a button to zoom in or out.
+
+
+\section{Content from read me}
+
+For part 2 go through these given assumptions and guidelines
+
+-The attached file is program to draw an svg image and solve an ac circuit;
+
+-For the solving part we made certain assumption and guidelines which 
+are briefly mentioned below;
+
+We have solved the ac circuit in which all elements are connected in series or in parallel with any number of voltage source and  current source;
+
+-there can any number of elements hence we have covered all possible 7 cases which are 
+
+-purely resistive
+
+-purely capacitive
+
+-purely inductive
+
+-lc circuit
+
+-lr circuit
+
+-rc circuit
+
+-lcr circuit
+
+-User are required to follow following guidelines while entering input
+
+-There should be space between magnitude and their unit likewise 10 k is correct while 10k is not valid.
+
+-To enter a value with decimal point u neeed to use unit to express that floating point integer i.e to enter 12.35 u need enter 1235 c where 'c'
+stands for centi and is equal to 1/100.so input requires integer unit ,choose your unit wisely so that it can convert your input into floating point integer.
+
+-Following are the unit provided by program with their abbrevation :-
+
+'M'  for mega=1000000;
+
+'k'  for kilo=1000;
+
+'da'  for deca=10;
+
+'d'  for deci=1/10;
+
+'c'  for centi=1/100;
+
+'m'  for milli=1/1000;
+
+'u' for micro=1/1000000;
+
+'n' for nano=1/1000000000;
+
+
+-For voltage the amplitude only excepts integer with no unit .
+
+-Four testcases are also provided which cover following 4 case;
+
+1)Multiple voltage source with multiple elements connected in sereies
+
+2)Multiple voltage source with multiple elements connected in parallel
+
+3)Multiple current source with multiple elements connected in sereies
+
+4)Multiple current source with multiple elements connected in parallel
+
+-Intially program needs to know  type of circuit out of the above four from user.
+
+-Make sure to follow above guidelines while entering input any violation will result in no result  
+
+
+
+
+	
+
+
+\end{document}
